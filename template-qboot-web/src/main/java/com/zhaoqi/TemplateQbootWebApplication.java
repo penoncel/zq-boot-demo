@@ -8,6 +8,7 @@ public class TemplateQbootWebApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(TemplateQbootWebApplication.class, args);
+        System.out.println("");
     }
 
 }
