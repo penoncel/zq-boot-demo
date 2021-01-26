@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/template-qboot-web" />
+    <file type="web" url="file://$PROJECT_DIR$/template-qboot-web-app-api" />
+    <file type="web" url="file://$PROJECT_DIR$/template-qboot-web-platform" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/template-parent/pom.xml" />
         <option value="$PROJECT_DIR$/template-qboot-service/pom.xml" />
-        <option value="$PROJECT_DIR$/template-qboot-web/pom.xml" />
+        <option value="$PROJECT_DIR$/template-qboot-web-platform/pom.xml" />
+        <option value="$PROJECT_DIR$/template-qboot-web-app-api/pom.xml" />
+        <option value="$PROJECT_DIR$/template-qboot-app-order/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/template-qboot-web/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="false" project-jdk-name="1.8 (2)" project-jdk-type="JavaSDK">

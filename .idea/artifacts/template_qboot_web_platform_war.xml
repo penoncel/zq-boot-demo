@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="template-qboot-web-platform:war">
+    <output-path>$PROJECT_DIR$/template-qboot-web-platform/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>template-qboot-web-platform</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="web-platform.war">
+      <element id="artifact" artifact-name="template-qboot-web-platform:war exploded" />
+    </root>
+  </artifact>
+</component>

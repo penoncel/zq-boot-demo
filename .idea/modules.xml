@@ -3,8 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/template-parent/template-parent.iml" filepath="$PROJECT_DIR$/template-parent/template-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/template-qboot-app-order/template-qboot-app-order.iml" filepath="$PROJECT_DIR$/template-qboot-app-order/template-qboot-app-order.iml" />
       <module fileurl="file://$PROJECT_DIR$/template-qboot-service/template-qboot-service.iml" filepath="$PROJECT_DIR$/template-qboot-service/template-qboot-service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/template-qboot-web/template-qboot-web.iml" filepath="$PROJECT_DIR$/template-qboot-web/template-qboot-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/template-qboot-web-app-api/template-qboot-web-app-api.iml" filepath="$PROJECT_DIR$/template-qboot-web-app-api/template-qboot-web-app-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/template-qboot-web-platform/template-qboot-web-platform.iml" filepath="$PROJECT_DIR$/template-qboot-web-platform/template-qboot-web-platform.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/zq-boot-demo.iml" filepath="$PROJECT_DIR$/.idea/zq-boot-demo.iml" />
     </modules>
   </component>
