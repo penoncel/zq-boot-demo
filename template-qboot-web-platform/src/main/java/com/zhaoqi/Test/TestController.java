@@ -12,6 +12,7 @@ public class TestController {
 
     @RequestMapping("/test")
     String getName(){
-        return testService.getName("Platform");
+
+        return testService.getName("Platform is msg");
     }
 }

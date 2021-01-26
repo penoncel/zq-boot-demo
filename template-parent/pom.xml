@@ -80,6 +80,14 @@
 
     <!-- 配置架包依赖 maven特点之一：依赖, 相当于java中的导包 父pom中的引入的架包依赖，子pom可以继承使用  -->
     <dependencies>
+        <!--devtools 热部署-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <!--该依赖不传递-->
+            <optional>true</optional>
+        </dependency>
+
         <!--starter-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
