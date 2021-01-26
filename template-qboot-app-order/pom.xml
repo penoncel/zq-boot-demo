@@ -20,6 +20,11 @@
             <groupId>com.zhaoqi</groupId>
             <artifactId>template-qboot-service</artifactId>
         </dependency>
+        <!-- 配置文件 -->
+        <dependency>
+            <groupId>com.zhaoqi</groupId>
+            <artifactId>template-parent-config</artifactId>
+        </dependency>
     </dependencies>
 
 

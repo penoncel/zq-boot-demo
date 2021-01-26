@@ -29,7 +29,12 @@
 
     <!-- 配置聚合模块 maven特点之一：聚合,聚合多个子模块 聚合是将多个模块组装在一起,相互协调依赖运行 -->
     <modules>
+        <!-- 配置文件工程 -->
+        <module>../template-parent-config</module>
+        <!-- 核心业务 -->
         <module>../template-qboot-service</module>
+
+
         <module>../template-qboot-web-platform</module>
         <module>../template-qboot-web-app-api</module>
         <module>../template-qboot-app-order</module>
@@ -37,42 +42,48 @@
 
     <!-- 版本控制 -->
     <properties >
+        <!-- jdk 版本 -->
         <java.version>1.8</java.version>
-        <v.template-qboot-service>0.0.1-SNAPSHOT</v.template-qboot-service>
-        <v.template-qboot-web-platform>0.0.1-SNAPSHOT</v.template-qboot-web-platform>
-        <v.template-qboot-web-app-api>0.0.1-SNAPSHOT</v.template-qboot-web-app-api>
-        <v.template-qboot-app-order>0.0.1-SNAPSHOT</v.template-qboot-app-order>
+        <!-- 针对 springboot Maven 打包 跳过 test -->
+        <skipTests>true</skipTests>
     </properties>
 
     <!-- 配置架包版本管理. 架包版本管理器：只对版本进行管理，不会实际引入，在<dependencies>依赖才引用 .作用:子pom中可能引用的架包依赖,在这里声明,进行统一管理。子pom引用时,不用加<version> -->
     <dependencyManagement>
         <dependencies>
+            <!-- 配置文件 -->
+            <dependency>
+                <groupId>com.zhaoqi</groupId>
+                <artifactId>template-parent-config</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
             <!-- 核心业务 -->
             <dependency>
                 <groupId>com.zhaoqi</groupId>
                 <artifactId>template-qboot-service</artifactId>
-                <version>${v.template-qboot-service}</version>
+                <version>${project.version}</version>
             </dependency>
 
             <!-- web管理平台 -->
             <dependency>
                 <groupId>com.zhaoqi</groupId>
                 <artifactId>template-qboot-web-platform</artifactId>
-                <version>${v.template-qboot-web-platform}</version>
+                <version>${project.version}</version>
             </dependency>
 
             <!-- app接口 -->
             <dependency>
                 <groupId>com.zhaoqi</groupId>
                 <artifactId>template-qboot-web-app-api</artifactId>
-                <version>${v.template-qboot-web-app-api}</version>
+                <version>${project.version}</version>
             </dependency>
 
             <!-- app 订单服务 -->
             <dependency>
                 <groupId>com.zhaoqi</groupId>
                 <artifactId>template-qboot-app-order</artifactId>
-                <version>${v.template-qboot-app-order}</version>
+                <version>${project.version}</version>
             </dependency>
 
         </dependencies>
@@ -112,31 +123,6 @@
         </dependency>
     </dependencies>
 
-    <!--  -->
-    <profiles>
-        <profile>
-            <id>dev</id>
-            <properties>
-                <environment>dev</environment>
-            </properties>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-        </profile>
-
-        <profile>
-            <id>test</id>
-            <properties>
-                <environment>test</environment>
-            </properties>
-        </profile>
-        <profile>
-            <id>prod</id>
-            <properties>
-                <environment>prod</environment>
-            </properties>
-        </profile>
-    </profiles>
 
     <!--配置maven架包的远程仓库  作用:下载maven架包-->
     <repositories>
@@ -175,7 +161,6 @@
                     <source>${java.version}</source>
                     <target>${java.version}</target>
                     <encoding>UTF-8</encoding>
-                    <skip>true</skip>
                 </configuration>
             </plugin>
         </plugins>

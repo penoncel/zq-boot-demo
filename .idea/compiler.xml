@@ -8,13 +8,16 @@
         <outputRelativeToContentRoot value="true" />
         <module name="template-qboot-web-platform" />
         <module name="template-qboot-web-app-api" />
+        <module name="template-parent-config" />
         <module name="template-qboot-service" />
         <module name="template-qboot-app-order" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="template-parent" target="1.8" />
+      <module name="template-parent-config" target="1.8" />
       <module name="template-qboot-app-order" target="1.8" />
+      <module name="template-qboot-common-config" target="1.8" />
       <module name="template-qboot-service" target="1.8" />
       <module name="template-qboot-web" target="1.8" />
       <module name="template-qboot-web-app-api" target="1.8" />
@@ -24,7 +27,9 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="template-parent" options="" />
+      <module name="template-parent-config" options="-parameters" />
       <module name="template-qboot-app-order" options="-parameters" />
+      <module name="template-qboot-common-config" options="-parameters" />
       <module name="template-qboot-service" options="-parameters" />
       <module name="template-qboot-web" options="-parameters" />
       <module name="template-qboot-web-app-api" options="-parameters" />

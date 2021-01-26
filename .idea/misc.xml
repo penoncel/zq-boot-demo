@@ -13,6 +13,7 @@
         <option value="$PROJECT_DIR$/template-qboot-web-platform/pom.xml" />
         <option value="$PROJECT_DIR$/template-qboot-web-app-api/pom.xml" />
         <option value="$PROJECT_DIR$/template-qboot-app-order/pom.xml" />
+        <option value="$PROJECT_DIR$/template-parent-config/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
